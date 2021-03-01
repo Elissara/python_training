@@ -18,7 +18,7 @@ class ContactHelper:
         wd = self.app.wd
         self.select_first_contact()
         # submit deletion
-        wd.find_element_by_xpath("(//img[@alt='Edit'])[4]").click()
+        wd.find_element_by_xpath("//img[@alt='Edit']").click()
         self.fill_contact_form(contact)
         wd.find_element_by_name("update").click()
         self.return_to_home_page()
@@ -55,7 +55,7 @@ class ContactHelper:
         # select first contact
         self.select_first_contact()
         # open modification form
-        wd.find_element_by_xpath("(//img[@alt='Edit'])[4]").click()
+        wd.find_element_by_xpath("//img[@alt='Edit']").click()
         # fill contact form
         self.fill_contact_form(new_contact_data)
         # submit modification
@@ -65,3 +65,9 @@ class ContactHelper:
     def return_to_home_page(self):
         wd = self.app.wd
         wd.find_element_by_link_text("home").click()
+
+    def count(self):
+        wd = self.app.wd
+        self.return_to_home_page()
+        return len(wd.find_elements_by_name("selected[]"))
+
