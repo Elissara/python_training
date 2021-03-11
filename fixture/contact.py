@@ -19,7 +19,7 @@ class ContactHelper:
         self.contact_cache = None
 
     def change(self):
-        self.change_by_inde(0)
+        self.change_by_index(0)
 
     def change_by_index(self, contact, index):
         wd = self.app.wd
