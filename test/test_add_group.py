@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from model.group import Group
+import time
 import pytest
 import random
 import string
@@ -20,6 +21,7 @@ testdata = [
 def test_add_group(app, group):
         old_groups = app.group.get_group_list()
         app.group.create(group)
+        time.sleep(3)
         assert len(old_groups) + 1 == app.group.count()
         new_groups = app.group.get_group_list()
         old_groups.append(group)
