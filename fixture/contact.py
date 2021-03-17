@@ -24,9 +24,9 @@ class ContactHelper:
 
     def change_by_index(self, contact, index):
         wd = self.app.wd
-        self.select_contact_by_index(index)
+        self.open_home_page()
         # submit deletion
-        wd.find_element_by_xpath("//img[@alt='Edit']").click()
+        wd.find_element_by_xpath("//img[@alt='Edit']")[index].click()
         self.fill_contact_form(contact)
         wd.find_element_by_name("update").click()
         self.open_home_page()
@@ -73,13 +73,13 @@ class ContactHelper:
     def modify_contact_by_index(self, new_contact_data, index):
         wd = self.app.wd
         # select first contact
-        self.select_contact_by_index(index)
+        self.open_home_page()
         # open modification form
-        wd.find_element_by_xpath("//img[@alt='Edit']").click()
+        wd.find_elements_by_xpath("//img[@alt='Edit']")[index].click()
         # fill contact form
         self.fill_contact_form(new_contact_data)
         # submit modification
-        wd.find_element_by_name("update").click()
+        wd.find_element_by_xpath("(//input[@name='update'])[2]").click()
         self.open_home_page()
         self.contact_cache = None
 
