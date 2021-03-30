@@ -53,6 +53,10 @@ class ContactHelper:
         wd = self.app.wd
         wd.find_elements_by_name("selected[]")[index].click()
 
+    def select_contact_by_id(self, id):
+        wd = self.app.wd
+        wd.find_element_by_css_selector("input[value='%s']" % id).click()
+
     def delete_first_contact(self):
         self.delete_contact_by_index(0)
 
@@ -61,6 +65,17 @@ class ContactHelper:
         # self.open_home_page()
         # select first group
         self.select_contact_by_index(index)
+        wd.find_element_by_xpath("//input[@value='Delete']").click()
+        # submit deletion
+        wd.switch_to_alert().accept()
+        self.open_home_page()
+        self.contact_cache = None
+
+    def delete_contact_by_id(self, id):
+        wd = self.app.wd
+        # self.open_home_page()
+        # select first group
+        self.select_contact_by_id(id)
         wd.find_element_by_xpath("//input[@value='Delete']").click()
         # submit deletion
         wd.switch_to_alert().accept()
@@ -78,6 +93,19 @@ class ContactHelper:
         wd.find_elements_by_xpath("//img[@alt='Edit']")[index].click()
         # fill contact form
         self.fill_contact_form(new_contact_data)
+        # submit modification
+        wd.find_element_by_xpath("(//input[@name='update'])[2]").click()
+        self.open_home_page()
+        self.contact_cache = None
+
+    def modify_contact_by_id(self, contact, id):
+        wd = self.app.wd
+        # select first contact
+        self.open_home_page()
+        # open modification form
+        wd.find_element_by_xpath("//a[contains(@href, 'edit.php?id=%s')]/img" % id).click()
+        # fill contact form
+        self.fill_contact_form(contact)
         # submit modification
         wd.find_element_by_xpath("(//input[@name='update'])[2]").click()
         self.open_home_page()
@@ -153,7 +181,6 @@ class ContactHelper:
         workphone = re.search("W: (.*)", text).group(1)
         mobilephone = re.search("M: (.*)", text).group(1)
         secondaryphone = re.search("P: (.*)", text).group(1)
-
         return Contact(homephone=homephone, workphone=workphone,
                        mobilephone=mobilephone, secondaryphone=secondaryphone)
 
