@@ -161,3 +161,8 @@ class GroupHelper:
                 id = element.find_element_by_name("selected[]").get_attribute("value")
                 self.group_cache.append(Group(name=text, id=id))
         return list(self.group_cache)
+
+    def add_to_group(self, id):
+            wd = self.app.wd
+            wd.find_element_by_name("to_group").click()
+            wd.find_element_by_css_selector("input[value='%s']" % id).click()
