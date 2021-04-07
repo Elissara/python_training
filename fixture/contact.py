@@ -184,4 +184,28 @@ class ContactHelper:
         return Contact(homephone=homephone, mobilephone=mobilephone, workphone=workphone,
                        secondaryphone=secondaryphone)
 
+    def add_contact_to_group(self, contact, group):
+        wd = self.app.wd
+        self.open_home_page()
+        self.select_contact_by_id(contact.id)
+        wd.find_element_by_name("to_group").click()
+        for is_group in wd.find_elements_by_xpath("//select[@name='to_group']//option"):
+            if is_group.get_attribute("value") == group.id:
+                is_group.click()
+                wd.find_element_by_name("add").click()
+        self.open_home_page()
+        self.contact_cache = None
+
+    def del_contact_from_group(self, contact, group):
+        wd = self.app.wd
+        for contact_group in wd.find_elements_by_xpath("//select[@name='group']//option"):
+            if contact_group.get_attribute("value") == group.id:
+                wd.find_element_by_name("group").click()
+                contact_group.click()
+                break
+        self.select_contact_by_id(contact.id)
+        wd.find_element_by_name("remove").click()
+        self.open_home_page()
+        self.contact_cache = None
+
 
