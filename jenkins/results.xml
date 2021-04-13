@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="6" time="65.274" timestamp="2021-04-13T23:53:32.126499" hostname="DESKTOP-6DEV9MC"><testcase classname="test.test_add_group" name="test_add_group[None:::]" time="33.114" /><testcase classname="test.test_add_group" name="test_add_group[None:name(x$fk#_.e:header'g.WfD S Q:footer0r4A^c=]" time="4.872"><failure message="AssertionError: assert [159:Test_nam...w_footer, ...] == [159:Test_nam...w_footer, ...]&#10;  Left contains one more item: None:name(x$fk#_.e:header'g.WfD S Q:footer0r4A^c=&#10;  Use -v to get the full diff">app = &lt;fixture.application.Application object at 0x0000016A78E71700&gt;
+db = &lt;fixture.db.DbFixture object at 0x0000016A78E71820&gt;
+json_groups = None:name(x$fk#_.e:header'g.WfD S Q:footer0r4A^c=
+check_ui = False
+
+    def test_add_group(app, db, json_groups, check_ui):
+            group = json_groups
+            old_groups = db.get_group_list()
+            app.group.create(group)
+            new_groups = db.get_group_list()
+            old_groups.append(group)
+&gt;           assert sorted(old_groups, key=Group.id_or_max) == sorted(new_groups, key=Group.id_or_max)
+E           AssertionError: assert [159:Test_nam...w_footer, ...] == [159:Test_nam...w_footer, ...]
+E             Left contains one more item: None:name(x$fk#_.e:header'g.WfD S Q:footer0r4A^c=
+E             Use -v to get the full diff
+
+test\test_add_group.py:11: AssertionError</failure></testcase><testcase classname="test.test_add_group" name="test_add_group[None:namef4f!,gs:header}6p7m:footer_]" time="5.726" /><testcase classname="test.test_add_group" name="test_add_group[None:name2H06:headerSR?3F6A8G%=:footer H 0SQBT{LgG h`oJ=&lt;]" time="6.551" /><testcase classname="test.test_add_group" name="test_add_group[None:name!sF12:header2A',$7+25#Z:footerU%N]" time="4.230"><failure message="AssertionError: assert [159:Test_nam...w_footer, ...] == [159:Test_nam...w_footer, ...]&#10;  Left contains one more item: None:name!sF12:header2A',$7+25#Z:footerU%N&#10;  Use -v to get the full diff">app = &lt;fixture.application.Application object at 0x0000016A78E71700&gt;
+db = &lt;fixture.db.DbFixture object at 0x0000016A78E71820&gt;
+json_groups = None:name!sF12:header2A',$7+25#Z:footerU%N, check_ui = False
+
+    def test_add_group(app, db, json_groups, check_ui):
+            group = json_groups
+            old_groups = db.get_group_list()
+            app.group.create(group)
+            new_groups = db.get_group_list()
+            old_groups.append(group)
+&gt;           assert sorted(old_groups, key=Group.id_or_max) == sorted(new_groups, key=Group.id_or_max)
+E           AssertionError: assert [159:Test_nam...w_footer, ...] == [159:Test_nam...w_footer, ...]
+E             Left contains one more item: None:name!sF12:header2A',$7+25#Z:footerU%N
+E             Use -v to get the full diff
+
+test\test_add_group.py:11: AssertionError</failure></testcase><testcase classname="test.test_add_group" name="test_add_group[None:name0{ :header &amp;_.:footer/R XtA3 YW) ](]" time="9.919" /></testsuite></testsuites>
