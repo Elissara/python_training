@@ -1,0 +1,216 @@
+{
+  "uid" : "f50f1e283a4512a9",
+  "name" : "test_add_group[None:name0{ :header &_.:footer/R XtA3 YW) ](]",
+  "fullName" : "test.test_add_group#test_add_group",
+  "historyId" : "1795d8c02e17d5d0d00a9c259ffd52a7",
+  "time" : {
+    "start" : 1618426137216,
+    "stop" : 1618426140269,
+    "duration" : 3053
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "db",
+    "time" : {
+      "start" : 1618426084566,
+      "stop" : 1618426084580,
+      "duration" : 14
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "stop",
+    "time" : {
+      "start" : 1618426084566,
+      "stop" : 1618426084566,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "check_ui",
+    "time" : {
+      "start" : 1618426137215,
+      "stop" : 1618426137215,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "app",
+    "time" : {
+      "start" : 1618426137094,
+      "stop" : 1618426137215,
+      "duration" : 121
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Given a group list",
+      "time" : {
+        "start" : 1618426137216,
+        "stop" : 1618426137218,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "When I add a group None:name0{ :header &_.:footer/R XtA3 YW) ]( to the list",
+      "time" : {
+        "start" : 1618426137218,
+        "stop" : 1618426140264,
+        "duration" : 3046
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "When I add a group None:name0{ :header &_.:footer/R XtA3 YW) ]( to the list",
+      "time" : {
+        "start" : 1618426140264,
+        "stop" : 1618426140268,
+        "duration" : 4
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Then the new group list is equal to the old list with added group",
+      "time" : {
+        "start" : 1618426140269,
+        "stop" : 1618426140269,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ {
+    "name" : "db::fin",
+    "time" : {
+      "start" : 1618426140273,
+      "stop" : 1618426140274,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "stop::fin",
+    "time" : {
+      "start" : 1618426140275,
+      "stop" : 1618426145809,
+      "duration" : 5534
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test"
+  }, {
+    "name" : "suite",
+    "value" : "test_add_group"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-6DEV9MC"
+  }, {
+    "name" : "thread",
+    "value" : "14832-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test.test_add_group"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "json_groups",
+    "value" : "None:name0{ :header &_.:footer/R XtA3 YW) ]("
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f50f1e283a4512a9.json",
+  "parameterValues" : [ "None:name0{ :header &_.:footer/R XtA3 YW) ](" ]
+}

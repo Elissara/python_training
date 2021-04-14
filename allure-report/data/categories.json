@@ -1,0 +1,43 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert [159:Test_nam...w_footer, ...] == [159:Test_nam...w_footer, ...]\n  Left contains one more item: None:name(x$fk#_.e:header'g.WfD S Q:footer0r4A^c=\n  Use -v to get the full diff",
+      "children" : [ {
+        "name" : "test_add_group[None:name(x$fk#_.e:header'g.WfD S Q:footer0r4A^c=]",
+        "uid" : "4162b0390c78c570",
+        "parentUid" : "a2e0b16fff45eb299b84427bd12f75da",
+        "status" : "failed",
+        "time" : {
+          "start" : 1618426127947,
+          "stop" : 1618426129975,
+          "duration" : 2028
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "None:name(x$fk#_.e:header'g.WfD S Q:footer0r4A^c=" ]
+      } ],
+      "uid" : "a2e0b16fff45eb299b84427bd12f75da"
+    }, {
+      "name" : "AssertionError: assert [159:Test_nam...w_footer, ...] == [159:Test_nam...w_footer, ...]\n  Left contains one more item: None:name!sF12:header2A',$7+25#Z:footerU%N\n  Use -v to get the full diff",
+      "children" : [ {
+        "name" : "test_add_group[None:name!sF12:header2A',$7+25#Z:footerU%N]",
+        "uid" : "ec9805eefc2ce503",
+        "parentUid" : "af32646e9c33db4a4c77fd0b4e33c579",
+        "status" : "failed",
+        "time" : {
+          "start" : 1618426135076,
+          "stop" : 1618426137079,
+          "duration" : 2003
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "None:name!sF12:header2A',$7+25#Z:footerU%N" ]
+      } ],
+      "uid" : "af32646e9c33db4a4c77fd0b4e33c579"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

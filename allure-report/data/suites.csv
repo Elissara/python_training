@@ -1,0 +1,7 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed Apr 14 21:48:44 MSK 2021","Wed Apr 14 21:48:47 MSK 2021","3588","test","test_add_group","test_add_group[None","","","test_add_group[None:::]",""
+"failed","Wed Apr 14 21:48:55 MSK 2021","Wed Apr 14 21:48:57 MSK 2021","2003","test","test_add_group","","","","test_add_group[None:name!sF12:header2A',$7+25#Z:footerU%N]",""
+"passed","Wed Apr 14 21:48:57 MSK 2021","Wed Apr 14 21:49:00 MSK 2021","3053","test","test_add_group","","","","test_add_group[None:name0{ :header &_.:footer/R XtA3 YW) ](]",""
+"passed","Wed Apr 14 21:48:50 MSK 2021","Wed Apr 14 21:48:52 MSK 2021","2137","test","test_add_group","","","","test_add_group[None:namef4f!,gs:header}6p7m:footer_]",""
+"passed","Wed Apr 14 21:48:52 MSK 2021","Wed Apr 14 21:48:54 MSK 2021","2258","test","test_add_group","","","","test_add_group[None:name2H06:headerSR?3F6A8G%=:footer H 0SQBT{LgG h`oJ=<]",""
+"failed","Wed Apr 14 21:48:47 MSK 2021","Wed Apr 14 21:48:49 MSK 2021","2028","test","test_add_group","","","","test_add_group[None:name(x$fk#_.e:header'g.WfD S Q:footer0r4A^c=]",""

@@ -1,0 +1,61 @@
+[ {
+  "uid" : "73e6477777011022",
+  "name" : "test_add_group[None:::]",
+  "time" : {
+    "start" : 1618426124145,
+    "stop" : 1618426127733,
+    "duration" : 3588
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ec9805eefc2ce503",
+  "name" : "test_add_group[None:name!sF12:header2A',$7+25#Z:footerU%N]",
+  "time" : {
+    "start" : 1618426135076,
+    "stop" : 1618426137079,
+    "duration" : 2003
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "f50f1e283a4512a9",
+  "name" : "test_add_group[None:name0{ :header &_.:footer/R XtA3 YW) ](]",
+  "time" : {
+    "start" : 1618426137216,
+    "stop" : 1618426140269,
+    "duration" : 3053
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3b88a354f84d5eb8",
+  "name" : "test_add_group[None:namef4f!,gs:header}6p7m:footer_]",
+  "time" : {
+    "start" : 1618426130356,
+    "stop" : 1618426132493,
+    "duration" : 2137
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dd7a694a4c47e8b6",
+  "name" : "test_add_group[None:name2H06:headerSR?3F6A8G%=:footer H 0SQBT{LgG h`oJ=<]",
+  "time" : {
+    "start" : 1618426132652,
+    "stop" : 1618426134910,
+    "duration" : 2258
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4162b0390c78c570",
+  "name" : "test_add_group[None:name(x$fk#_.e:header'g.WfD S Q:footer0r4A^c=]",
+  "time" : {
+    "start" : 1618426127947,
+    "stop" : 1618426129975,
+    "duration" : 2028
+  },
+  "status" : "failed",
+  "severity" : "normal"
+} ]
